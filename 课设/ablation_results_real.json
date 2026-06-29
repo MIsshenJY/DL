@@ -1,0 +1,65 @@
+[
+  {
+    "T": 1,
+    "alpha": 0.3,
+    "best_val_acc": 0.8475,
+    "epochs_used": 3,
+    "timestamp": "2026-06-29 02:50:34"
+  },
+  {
+    "T": 1,
+    "alpha": 0.6,
+    "best_val_acc": 0.8317,
+    "epochs_used": 3,
+    "timestamp": "2026-06-29 03:43:38"
+  },
+  {
+    "T": 1,
+    "alpha": 0.9,
+    "best_val_acc": 0.8333,
+    "epochs_used": 3,
+    "timestamp": "2026-06-29 04:38:26"
+  },
+  {
+    "T": 3,
+    "alpha": 0.3,
+    "best_val_acc": 0.8467,
+    "epochs_used": 3,
+    "timestamp": "2026-06-29 12:53:30"
+  },
+  {
+    "T": 3,
+    "alpha": 0.6,
+    "best_val_acc": 0.8383,
+    "epochs_used": 3,
+    "timestamp": "2026-06-29 13:49:16"
+  },
+  {
+    "T": 3,
+    "alpha": 0.9,
+    "best_val_acc": 0.8358,
+    "epochs_used": 3,
+    "timestamp": "2026-06-29 14:42:53"
+  },
+  {
+    "T": 5,
+    "alpha": 0.3,
+    "best_val_acc": 0.8208,
+    "epochs_used": 3,
+    "timestamp": "2026-06-29 15:40:06"
+  },
+  {
+    "T": 5,
+    "alpha": 0.6,
+    "best_val_acc": 0.8367,
+    "epochs_used": 3,
+    "timestamp": "2026-06-29 17:39:51"
+  },
+  {
+    "T": 5,
+    "alpha": 0.9,
+    "best_val_acc": 0.8417,
+    "epochs_used": 3,
+    "timestamp": "2026-06-29 18:32:58"
+  }
+]

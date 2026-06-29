@@ -98,7 +98,7 @@ python app.py
 ### 教师模型
 - **模型**：BERT-base-chinese（12 层 Transformer）
 - **参数量**：102.27M
-- **微调**：在 ChnSentiCorp 训练集上微调，验证准确率 94.58%
+- **微调**：在 ChnSentiCorp 训练集上微调，测试准确率 94.58%
 
 ### 学生模型
 - **模型**：2 层双向 LSTM（BiLSTM）
@@ -106,8 +106,8 @@ python app.py
 - **参数量**：9.06M
 
 ### 知识蒸馏
-- **温度参数 T**：2.0
-- **软标签权重 α**：0.5
+- **温度参数 T**：1.0
+- **软标签权重 α**：0.3
 - **损失函数**：`α * KL(soft_student || soft_teacher) * T² + (1-α) * CrossEntropy(student, hard_label)`
 - **训练策略**：早停（patience=3）+ 学习率衰减
 
@@ -124,12 +124,9 @@ python app.py
 
 ### 调用示例
 
-```json
-// 请求
-POST /api/predict
-Content-Type: application/json
-{"text": "这款手机性价比很高"}
+> 注：以下示例中的 `inference_time_ms` 为端到端耗时（含 Tokenization + 推理），与部署性能表格中的纯推理时间（70.49 ms）口径不同。
 
+```json
 // 响应
 {
   "text": "这款手机性价比很高",
